@@ -1,7 +1,7 @@
 <template>
 	<div
 		class="w-full bg-rose-100 rounded-md shadow-sm overflow-hidden relative"
-		v-if="!imageError"
+		<!-- v-if="!imageError" -->
 	>
 		<loading-overlay :loading="loading" />
 
