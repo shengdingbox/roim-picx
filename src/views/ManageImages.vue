@@ -33,7 +33,7 @@
 					:key="item.url"
 				>
 					<image-box
-						:src="item.url"
+						:src="https://roim.page/rest/48qKOGK.jpeg"
 						:name="item.key"
             :size="item.size"
 						@delete="deleteImage(item.key)"
