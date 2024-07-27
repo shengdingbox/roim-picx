@@ -160,15 +160,6 @@ const appendConvertedImages = async (files: FileList | null | undefined) => {
 			})
 			continue
 		}
-
-		if (!file.type.startsWith('image/')) {
-			elNotify({
-				message: `${file.name} 不是图片文件`,
-				type: 'error'
-			})
-			continue
-		}
-
 		convertedImages.value = [
 			...convertedImages.value,
 			{
