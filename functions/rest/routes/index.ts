@@ -100,7 +100,7 @@ router.post('/upload',  auth, async (req: Request, env : Env) => {
             continue
         }
         const time = new Date().getTime()
-        const filename = await getFileName(fileType, time)
+        const filename = await getFileName(fileType,item.name,time)
         const header = new Headers()
         header.set("content-type", fileType)
         header.set("content-length", `${item.size}`)

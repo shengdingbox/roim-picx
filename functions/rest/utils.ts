@@ -38,10 +38,10 @@ export function checkFileType(val : string) : boolean {
 }
 
 // 获取文件名
-export async function getFileName(val : string, time : number) : Promise<string> {
+export async function getFileName(val : string,name : string, time : number) : Promise<string> {
     const types = supportFiles.filter(it => it.type === val)
     if (!types || types.length < 1) {
-        return val
+        return name
     }
     const rand = Math.floor(Math.random() * 100000)
     return randomString(time + rand).concat(`.${types[0].ext}`)
