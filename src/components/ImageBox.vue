@@ -57,7 +57,7 @@
 						@confirm="
 							() => {
 								// (e: Event) => boolean ???
-								loading = true
+								loading = false
 								emit('delete')
 								return true
 							}
@@ -95,7 +95,7 @@ const props = defineProps<{
 const emit = defineEmits(['delete'])
 
 const imageError = ref(false)
-const loading = ref(true)
+const loading = ref(false)
 const copyLink = (link : string) => {
   const res = copy(link)
   if (res) {
