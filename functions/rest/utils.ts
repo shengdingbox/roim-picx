@@ -34,7 +34,7 @@ export function parseRange(encoded: string | null): undefined | { offset: number
 
 // 检查文件类是否支持
 export function checkFileType(val : string) : boolean {
-    return supportFile.indexOf(val) > -1
+    return true;
 }
 
 // 获取文件名

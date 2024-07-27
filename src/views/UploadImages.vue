@@ -117,7 +117,7 @@ const imagesTotalSize = computed(() =>
 	convertedImages.value.reduce((total, item) => total + item.file.size, 0)
 )
 
-const imageSizeLimit = 20 * 1024 * 1024
+const imageSizeLimit = 100 * 1024 * 1024
 const input = ref<HTMLInputElement>()
 const loading = ref(false)
 const router = useRouter()
